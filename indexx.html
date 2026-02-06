@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attractive UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #1d2671, #c33764);
+      color: #fff;
+    }
+
+    /* Navbar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    header nav a {
+      margin-left: 25px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      opacity: 0.85;
+    }
+
+    header nav a:hover {
+      opacity: 1;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      max-width: 550px;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #fff;
+      color: #c33764;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    /* Cards */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      padding: 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 35px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 14px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .features {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NeoUI</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Design Stunning Interfaces <br> Without Frameworks</h2>
+    <p>
+      Build clean, responsive, and modern UIs using pure HTML & CSS.
+      Perfect for portfolios, startups, and analytics dashboards.
+    </p>
+    <a href="#" class="btn">Explore Now</a>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>✨ Premium Look</h3>
+      <p>Glassmorphism and gradients that give your UI a professional feel.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Smooth UX</h3>
+      <p>Subtle hover effects and animations for a delightful experience.</p>
+    </div>
+
+    <div class="card">
+      <h3>📊 Data Ready</h3>
+      <p>Perfect base layout for analytics dashboards and admin panels.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Start Building Today</h2>
+    <a href="#" class="btn">Get Started</a>
+  </section>
+
+  <footer>
+    © 2026 NeoUI — Crafted with ❤️
+  </footer>
+
+</body>
+</html>
